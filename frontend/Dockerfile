@@ -1,5 +1,5 @@
 # Usa imagem oficial do Node
-FROM node:18
+FROM node:20-alpine
 
 # Define pasta de trabalho
 WORKDIR /app
