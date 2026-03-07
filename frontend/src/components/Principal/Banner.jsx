@@ -1,3 +1,5 @@
+import './Banner.css';
+
 function Banner() {
   return (
     <section>
@@ -5,7 +7,7 @@ function Banner() {
       <p>Transformando ideias em arquiteturas escaláveis e interfaces modernas.</p>
       <button>Saiba Mais</button>
     </section>
-  );
+  )
 }
 
-export default Banner;
+export default Banner

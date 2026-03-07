@@ -1,24 +1,40 @@
-import Card from "./Card";
+import Card from "./Principal/Card"
 
-export default function Services() {
+const servicos = [
+  {
+    titulo: "UI/UX Design",
+    descricao: "Criação de interfaces intuitivas"
+  },
+  {
+    titulo: "Infraestrutura AWS",
+    descricao: "Arquitetura de sistemas escaláveis"
+  },
+  {
+    titulo: "IA & Game Dev",
+    descricao: "Desenvolvimento com Inteligência Artificial"
+  },
+  {
+    titulo: "Engenharia de Dados",
+    descricao: "Estruturação e análise de dados"
+  }
+]
+
+function Services() {
   return (
-    <section className="cards-section">
+    <section>
+
       <h2>Nossas Especialidades</h2>
 
-      <div className="cards-grid">
-        <Card
-          titulo="Desenvolvimento Web"
-          descricao="Criamos aplicações modernas e escaláveis."
-        />
-        <Card
-          titulo="Cloud Computing"
-          descricao="Infraestrutura segura e eficiente na nuvem."
-        />
-        <Card
-          titulo="UI/UX Design"
-          descricao="Interfaces bonitas e intuitivas."
-        />
-      </div>
+     {servicos.map((servico, index) => (
+  <Card
+    key={index}
+    titulo={servico.titulo}
+    descricao={servico.descricao}
+  />
+))}
+
     </section>
-  );
+  )
 }
+
+export default Services

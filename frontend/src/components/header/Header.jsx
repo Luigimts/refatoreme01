@@ -1,5 +1,5 @@
 import './Header.css'
-import Principal from '../principal/Principal'
+import Principal from '../Principal/Principal'
 
 function Header() {
   return (
