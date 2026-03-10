@@ -1,0 +1,37 @@
+.carousel-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.carousel-track::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel-btn{
+  position: absolute;
+  background: #003366;
+  color: white;
+  border: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-btn.left{
+  left: -10px;
+}
+
+.carousel-btn.right{
+  right: -10px;
+}
