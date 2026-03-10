@@ -1,16 +1,12 @@
-.card {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.card{
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    color: #00509e;
-    margin-bottom: 1rem;
+.card:hover{
+  transform: translateY(-5px);
 }

@@ -1,5 +1,6 @@
 import Card from "./Card";
 import Banner from "./Banner";
+import Carousel from "./Carousel";
 import './Principal.css'
 function Principal() {
     const servicesData = [
@@ -37,15 +38,10 @@ function Principal() {
 
             <section id="services" className="cards-section">
                 <h2>Nossas Especialidades</h2>
-                <div id="cards-container" className="cards-grid">
-                    {servicesData.map((service) => (
-                        <Card
-                            key={service.id}
-                            title={service.title}
-                            description={service.description}
-                        />
-                    ))}
-                </div>
+                <div id="cards-container">
+  <Carousel services={servicesData} />
+</div>
+                
             </section>
         </main>
     )

@@ -1,10 +1,10 @@
-import'./Card.css';
+import './Card.css';
 
-function Card({ titulo }) {
+function Card({ title, description }) {
   return (
-    <div>
-      <h3>{titulo}</h3>
-      <p>Descrição do serviço oferecido.</p>
+    <div className="card">
+      <h3 className="card-title">{title}</h3>
+      <p className="card-description">{description}</p>
     </div>
   )
 }
